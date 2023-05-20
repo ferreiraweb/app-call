@@ -48,8 +48,11 @@ export const Button = styled('button', {
         backgroundColor: "$green-300"
     }
 
+})
 
 
-
+export const FormAnnotation = styled('div', {
+    color: '$red-500',
+    marginTop: '$2'
 
 })
