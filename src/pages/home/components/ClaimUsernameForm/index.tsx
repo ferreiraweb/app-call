@@ -35,16 +35,16 @@ export function ClaimUsernamForm() {
 
     return (
         <>
-        <Form onSubmit={handleSubmit(handleSubmitForm)}>
-            <TextInput  {...register("username")} />
-            <Button type="submit">
-                <span>Reservar</span>   
-                <ArrowLineRight />
-            </Button>
-        </Form>
-        <FormAnnotation>
-            {errors.username ? errors.username.message : 'digite o nome do usuário'}
-        </FormAnnotation>
+            <Form onSubmit={handleSubmit(handleSubmitForm)}>
+                <TextInput  {...register("username")} />
+                <Button type="submit">
+                    <span>Reservar</span>   
+                    <ArrowLineRight />
+                </Button>
+            </Form>
+            <FormAnnotation>
+                {errors.username ? errors.username.message : 'digite o nome do usuário'}
+            </FormAnnotation>
         </>
     )
 }
